@@ -1,0 +1,156 @@
+[
+  {
+    "q": "What is the name of the University where we met?",
+    "choices": ["University Dublin College", "University College Dublin", "Trinity College Dublin", "Hogwarts"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which of these is my favorite animal?",
+    "choices": ["Monkey", "Panda", "Spider", "Giraffe"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was the first person I met at the CU?",
+    "choices": ["Anya", "The Other Anya", "Luke", "Aaron"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is my favorite color?",
+    "choices": ["Blue", "Green", "Yellow", "Purple"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the name of the resturant we went to on our first date?",
+    "choices": ["Acapulco", "Pablo Picante", "Agave Dublin", "El Grito Mexican"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which of these did I claim to know how to do?",
+    "choices": ["Backflip", "Salsa", "Line Dance", "Fly"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "How Many Days Did We Go Not Seeing Eachother In Ireland?",
+    "choices": ["10", "15", "17", "2"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Who was the first person to ask me if we were dating?",
+    "choices": ["Lauren", "Magdeline", "Aaron", "Ross"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who said 'I love you' First?",
+    "choices": ["Kadence", "Michael", "Juliet", "Kevin"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Where were we when I first told you I loved you?",
+    "choices": ["On the Lawn infront of Oriley", "In your Dorm", "In my Dorm", "Ontop of a Ferris Wheel"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "How many rides did we go on after dinner on our First Date?",
+    "choices": ["10", "2", "3", "5"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "How many concussions did I suffer in Ireland?",
+    "choices": ["1", "2", "3", "I lost count"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the first thing I said to you?",
+    "choices": ["Hi, I am Michael", "I love line dancing and country music", "Have fun cleansing your Skeleton", "Who is you favorite country artist"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "How many countries, not counting Ireland, did we travel to together?",
+    "choices": ["0", "1", "2", "3"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "In Ireland, what is one thing that I said I always wanted to do?",
+    "choices": ["Bungee jump on the Cliffs of Moher", "Get married", "Split the G perfectly", "Fall in love"],
+    "answer": 3,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What was the first line dance you taught me?",
+    "choices": ["Wolf", "Flex", "Project", "Shake it for me"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which instrument have be both tried to learn?",
+    "choices": ["Guitar", "Violin", "Piano", "Flute"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "How many continents have we kissed on?",
+    "choices": ["0", "1", "2", "4"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What did you order on our first date?",
+    "choices": ["Tacos", "Skillet Fajitas", "Chimichanga", "A salad"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Between Ireland, Amsterdam, and Alicante, whcih one did you like best?",
+    "choices": ["Ireland", "Amsterdam", "Alicante", "None of them, because I actually hate you"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "When was our first kiss?",
+    "choices": ["March 17", "April 24", "March 24", "February 14"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "When did I first say 'I love you'?",
+    "choices": ["April 8", "April 14", "March 24", "May 11"],
+    "answer": 0,
+    "category":"Personal",
+    "difficulty": "medium"
+  }
+]

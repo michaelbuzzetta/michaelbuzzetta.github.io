@@ -1,4 +1,9 @@
-import { getCurrentQuestion, getGameProgress, answerQuestion, getCurrentGame } from "../routes/game.js";
+import {
+  getCurrentQuestion,
+  getGameProgress,
+  answerQuestion,
+  getCurrentGame
+} from "../routes/game.js";
 import { unlockMedia } from "../routes/gallery.js";
 
 let questionTextEl;
@@ -29,6 +34,15 @@ function updateProgress() {
     progressEl.textContent = "";
     return;
   }
+
+  const difficultyLabel =
+    progress.difficulty.charAt(0).toUpperCase() +
+    progress.difficulty.slice(1);
+  const categoryLabel =
+    progress.category && progress.category !== "any"
+      ? " • Category: " + progress.category
+      : "";
+
   progressEl.textContent =
     "Question " +
     progress.index +
@@ -37,14 +51,21 @@ function updateProgress() {
     " • Correct: " +
     progress.correct +
     " • Difficulty: " +
-    progress.difficulty.charAt(0).toUpperCase() +
-    progress.difficulty.slice(1);
+    difficultyLabel +
+    categoryLabel;
 }
 
 function renderQuestion() {
   const question = getCurrentQuestion();
   const game = getCurrentGame();
-  if (!question || !questionTextEl || !optionsListEl || !feedbackEl || !summaryEl) {
+
+  if (
+    !question ||
+    !questionTextEl ||
+    !optionsListEl ||
+    !feedbackEl ||
+    !summaryEl
+  ) {
     return;
   }
 
@@ -53,15 +74,17 @@ function renderQuestion() {
   feedbackEl.classList.remove("correct");
   feedbackEl.classList.remove("incorrect");
 
-  questionTextEl.textContent = question.text;
+  questionTextEl.textContent = question.q; // uses "q"
   clearElement(optionsListEl);
 
-  question.options.forEach((option, index) => {
+  const correctIndex = question.answer;
+
+  question.choices.forEach((choice, index) => {
     const li = document.createElement("li");
     const btn = document.createElement("button");
-    btn.textContent = option;
+    btn.textContent = choice;
     btn.addEventListener("click", () => {
-      handleAnswerClick(index, btn, game.difficulty, question.answerIndex);
+      handleAnswerClick(index, correctIndex, game.difficulty);
     });
     li.appendChild(btn);
     optionsListEl.appendChild(li);
@@ -70,9 +93,10 @@ function renderQuestion() {
   updateProgress();
 }
 
-function handleAnswerClick(selectedIndex, buttonEl, difficulty, correctIndex) {
+function handleAnswerClick(selectedIndex, correctIndex, difficulty) {
+  if (!optionsListEl || !feedbackEl || !summaryEl || !summaryTextEl) return;
+
   const result = answerQuestion(selectedIndex);
-  if (!feedbackEl || !optionsListEl || !summaryEl || !summaryTextEl) return;
 
   const optionButtons = Array.from(
     optionsListEl.querySelectorAll("button")
@@ -91,6 +115,7 @@ function handleAnswerClick(selectedIndex, buttonEl, difficulty, correctIndex) {
     const rewardCount = difficultyRewardCount(difficulty);
     const newlyUnlocked = unlockMedia(rewardCount);
     const count = newlyUnlocked.length;
+
     if (count > 0) {
       feedbackEl.textContent =
         "Correct! You unlocked " +
@@ -101,6 +126,7 @@ function handleAnswerClick(selectedIndex, buttonEl, difficulty, correctIndex) {
     } else {
       feedbackEl.textContent = "Correct!";
     }
+
     feedbackEl.classList.remove("incorrect");
     feedbackEl.classList.add("correct");
   } else {
@@ -123,10 +149,12 @@ function handleAnswerClick(selectedIndex, buttonEl, difficulty, correctIndex) {
 function showSummary() {
   const game = getCurrentGame();
   if (!game || !summaryEl || !summaryTextEl || !feedbackEl) return;
+
   const progress = getGameProgress();
   feedbackEl.textContent = "";
   feedbackEl.classList.remove("correct");
   feedbackEl.classList.remove("incorrect");
+
   summaryTextEl.textContent =
     "You answered " +
     progress.correct +

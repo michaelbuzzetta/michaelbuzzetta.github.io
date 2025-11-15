@@ -2,6 +2,7 @@ import { startNewGame } from "../routes/game.js";
 import { showGameForNewSession } from "./game.js";
 
 let selectedDifficulty = "easy";
+let selectedCategory = "any";
 
 export function initSettings() {
   const settingsView = document.getElementById("settings-view");
@@ -16,6 +17,7 @@ export function initSettings() {
   const difficultyButtons = Array.from(
     settingsView.querySelectorAll(".difficulty-btn")
   );
+  const categorySelect = document.getElementById("category-select");
 
   function show(view) {
     if (homeView) homeView.classList.add("hidden");
@@ -24,19 +26,28 @@ export function initSettings() {
     if (view) view.classList.remove("hidden");
   }
 
-  difficultyButtons.forEach(btn => {
+  difficultyButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      difficultyButtons.forEach(b => b.classList.remove("selected"));
+      difficultyButtons.forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
       selectedDifficulty = btn.getAttribute("data-difficulty") || "easy";
     });
   });
 
+  if (categorySelect) {
+    categorySelect.addEventListener("change", () => {
+      selectedCategory = categorySelect.value || "any";
+    });
+  }
+
   if (startBtn) {
     startBtn.addEventListener("click", async () => {
       const value = parseInt(numInput.value, 10);
-      const numQuestions = Number.isNaN(value) ? 5 : Math.max(1, Math.min(20, value));
-      await startNewGame(numQuestions, selectedDifficulty);
+      const numQuestions = Number.isNaN(value)
+        ? 5
+        : Math.max(1, Math.min(25, value));
+
+      await startNewGame(numQuestions, selectedDifficulty, selectedCategory);
       show(gameView);
       showGameForNewSession();
     });

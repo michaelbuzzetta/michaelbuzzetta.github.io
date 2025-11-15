@@ -1,95 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Quiz Unlocker</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../public/css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="site-header-inner">
-      <h1 class="site-title">Quiz Unlocker</h1>
-      <nav class="site-nav">
-        <a href="./index.html" class="nav-link">Home</a>
-        <a href="./gallery.html" class="nav-link">Gallery</a>
-      </nav>
+<section id="settings-view" class="view hidden">
+  <div class="card card-centered">
+    <h2>Game Settings</h2>
+
+    <div class="form-row">
+      <label for="num-questions">Number of questions</label>
+      <input id="num-questions" type="number" min="1" max="25" value="5">
     </div>
-  </header>
 
-  <main class="site-main">
-    <section id="home-view" class="view">
-      <div class="card card-centered">
-        <h2>Welcome</h2>
-        <p class="lead">
-          Answer questions, earn rewards, and reveal hidden photos and videos in the gallery.
-        </p>
-        <div class="button-row">
-          <button id="home-enter-game" class="btn btn-primary">Enter Game</button>
-          <a href="./gallery.html" class="btn btn-secondary">View Gallery</a>
-        </div>
+    <div class="form-row">
+      <span>Difficulty</span>
+      <div class="difficulty-row">
+        <button data-difficulty="easy" class="difficulty-btn selected">Easy</button>
+        <button data-difficulty="medium" class="difficulty-btn">Medium</button>
+        <button data-difficulty="hard" class="difficulty-btn">Hard</button>
       </div>
-    </section>
+    </div>
 
-    <section id="settings-view" class="view hidden">
-      <div class="card card-centered">
-        <h2>Game Settings</h2>
+    <div class="form-row">
+      <label for="category-select">Category (optional)</label>
+      <select id="category-select">
+        <option value="any">Any category</option>
+        <option value="Personal">Personal</option>
+        <!-- if you add more categories in the JSON later, add options here -->
+      </select>
+    </div>
 
-        <div class="form-row">
-          <label for="num-questions">Number of questions</label>
-          <input id="num-questions" type="number" min="1" max="20" value="5">
-        </div>
-
-        <div class="form-row">
-          <span>Difficulty</span>
-          <div class="difficulty-row">
-            <button data-difficulty="easy" class="difficulty-btn selected">Easy</button>
-            <button data-difficulty="medium" class="difficulty-btn">Medium</button>
-            <button data-difficulty="hard" class="difficulty-btn">Hard</button>
-          </div>
-        </div>
-
-        <div class="button-row">
-          <button id="settings-start" class="btn btn-primary">Start Game</button>
-          <button id="settings-cancel" class="btn btn-text">Back</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="game-view" class="view hidden">
-      <div class="card game-card">
-        <div class="game-header">
-          <button id="game-exit" class="btn btn-text small">⟵ Back</button>
-          <div class="game-progress" id="game-progress"></div>
-        </div>
-
-        <div id="game-question-container">
-          <h2 id="game-question-text"></h2>
-          <ul id="game-options" class="options-list"></ul>
-        </div>
-
-        <div id="game-feedback" class="game-feedback"></div>
-
-        <div id="game-summary" class="game-summary hidden">
-          <h2>Game Over</h2>
-          <p id="game-summary-text"></p>
-          <div class="button-row">
-            <button id="game-play-again" class="btn btn-primary">Play Again</button>
-            <a href="./gallery.html" class="btn btn-secondary">View Gallery</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script type="module">
-    import { initHome } from "../pages/home.js";
-    import { initSettings } from "../pages/settings.js";
-    import { initGamePage } from "../pages/game.js";
-
-    initHome();
-    initSettings();
-    initGamePage();
-  </script>
-</body>
-</html>
+    <div class="button-row">
+      <button id="settings-start" class="btn btn-primary">Start Game</button>
+      <button id="settings-cancel" class="btn btn-text">Back</button>
+    </div>
+  </div>
+</section>

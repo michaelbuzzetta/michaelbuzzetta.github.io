@@ -2,7 +2,6 @@ const QUESTIONS_URL = "../public/questions.json";
 
 let allQuestions = [];
 let questionsLoaded = false;
-
 let currentGame = null;
 
 async function loadQuestions() {
@@ -17,26 +16,52 @@ function shuffleArray(arr) {
   const copy = arr.slice();
   for (let i = copy.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
-    const temp = copy[i];
+    const tmp = copy[i];
     copy[i] = copy[j];
-    copy[j] = temp;
+    copy[j] = tmp;
   }
   return copy;
 }
 
-export async function startNewGame(numQuestions, difficulty) {
+/**
+ * Start a new game
+ * @param {number} numQuestions  how many questions to include
+ * @param {string} difficulty    "easy" | "medium" | "hard"
+ * @param {string} category      category name or "any"
+ */
+export async function startNewGame(numQuestions, difficulty, category = "any") {
   await loadQuestions();
-  const filtered = allQuestions.filter(q => q.difficulty === difficulty);
-  const pool = filtered.length > 0 ? filtered : allQuestions;
-  const shuffled = shuffleArray(pool);
+
+  // filter by difficulty first
+  let filtered = allQuestions.filter(
+    (q) => q.difficulty === difficulty
+  );
+
+  // optionally filter by category if not "any"
+  if (category && category !== "any") {
+    const byDiffAndCat = filtered.filter((q) => q.category === category);
+    if (byDiffAndCat.length > 0) {
+      filtered = byDiffAndCat;
+    }
+  }
+
+  // if nothing found, fall back to all questions
+  if (filtered.length === 0) {
+    filtered = allQuestions.slice();
+  }
+
+  const shuffled = shuffleArray(filtered);
   const count = Math.min(numQuestions, shuffled.length);
+
   currentGame = {
     difficulty,
+    category: category || "any",
     totalQuestions: count,
     currentIndex: 0,
     correctCount: 0,
     questions: shuffled.slice(0, count)
   };
+
   return getCurrentQuestion();
 }
 
@@ -51,22 +76,26 @@ export function getCurrentQuestion() {
 
 export function getGameProgress() {
   if (!currentGame) {
-    return { index: 0, total: 0, correct: 0, difficulty: "easy" };
+    return { index: 0, total: 0, correct: 0, difficulty: "easy", category: "any" };
   }
+
   return {
     index: currentGame.currentIndex + 1,
     total: currentGame.totalQuestions,
     correct: currentGame.correctCount,
-    difficulty: currentGame.difficulty
+    difficulty: currentGame.difficulty,
+    category: currentGame.category
   };
 }
 
 export function answerQuestion(optionIndex) {
   if (!currentGame) return { correct: false, done: true };
+
   const question = getCurrentQuestion();
   if (!question) return { correct: false, done: true };
 
-  const isCorrect = optionIndex === question.answerIndex;
+  const isCorrect = optionIndex === question.answer; // uses new "answer" field
+
   if (isCorrect) {
     currentGame.correctCount += 1;
   }
