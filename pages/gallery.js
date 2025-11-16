@@ -1,5 +1,35 @@
 import { getUnlockedMedia } from "../routes/gallery.js";
 
+const MEDIA_BASE = "./public/prize";
+
+function applyImageWithFallback(el, item) {
+  const match = item.id.match(/^photo-(\d+)$/);
+  if (!match) {
+    el.src = item.src;
+    return;
+  }
+
+  const index = match[1];
+  const candidates = [
+    `${MEDIA_BASE}/photo${index}.jpg`,
+    `${MEDIA_BASE}/photo${index}.jpeg`,
+    `${MEDIA_BASE}/photo${index}.png`
+  ];
+
+  let attempt = 0;
+  el.src = candidates[attempt];
+
+  el.onerror = () => {
+    attempt += 1;
+    if (attempt < candidates.length) {
+      el.src = candidates[attempt];
+    } else {
+      el.onerror = null;
+      el.classList.add("gallery-thumb-missing");
+    }
+  };
+}
+
 export function initGalleryPage() {
   const grid = document.getElementById("gallery-grid");
   const empty = document.getElementById("gallery-empty");
@@ -29,9 +59,9 @@ export function initGalleryPage() {
       modalBody.appendChild(video);
     } else {
       const img = document.createElement("img");
-      img.src = item.src;
       img.alt = item.title;
       img.className = "gallery-modal-media";
+      applyImageWithFallback(img, item);
       modalBody.appendChild(img);
     }
 
@@ -79,14 +109,15 @@ export function initGalleryPage() {
 
       const thumb = document.createElement(item.type === "video" ? "video" : "img");
       thumb.className = "gallery-thumb";
-      thumb.src = item.src;
 
       if (item.type === "video") {
+        thumb.src = item.src;
         thumb.muted = true;
         thumb.loop = true;
         thumb.autoplay = true;
       } else {
         thumb.alt = item.title;
+        applyImageWithFallback(thumb, item);
       }
 
       const title = document.createElement("div");
@@ -103,4 +134,10 @@ export function initGalleryPage() {
   }
 
   renderGallery();
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === "quizUnlocker_unlockedMediaIds") {
+      renderGallery();
+    }
+  });
 }

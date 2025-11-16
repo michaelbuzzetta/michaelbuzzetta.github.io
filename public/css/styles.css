@@ -301,11 +301,12 @@ body {
 
 .gallery-thumb {
   width: 100%;
-  display: block;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  background: #222842;
+  height: 140px;
+  object-fit: contain;
+  background: #020617;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.8);
 }
+
 
 .gallery-item-title {
   padding: 0.5rem 0.6rem;
@@ -352,7 +353,6 @@ body {
   margin-top: 0.75rem;
 }
 
-/* Layout */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -360,14 +360,12 @@ body {
   color: #f9fafb;
 }
 
-/* Simple reset */
 img,
 video {
   max-width: 100%;
   display: block;
 }
 
-/* Header / nav */
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -414,7 +412,6 @@ video {
   color: #facc15;
 }
 
-/* Main layout */
 .site-main {
   max-width: 900px;
   margin: 2rem auto 3rem;
@@ -426,7 +423,6 @@ video {
   justify-content: center;
 }
 
-/* Card */
 .card {
   width: 100%;
   background: radial-gradient(circle at top left, #0f172a, #020617);
@@ -447,7 +443,6 @@ video {
   color: #9ca3af;
 }
 
-/* Gallery grid */
 .gallery-grid {
   margin-top: 1.5rem;
   display: grid;
@@ -470,7 +465,6 @@ video {
   display: none !important;
 }
 
-/* Gallery items */
 .gallery-item {
   border: none;
   padding: 0;
@@ -505,7 +499,6 @@ video {
   background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.6));
 }
 
-/* Modal */
 .no-scroll {
   overflow: hidden;
 }
@@ -528,8 +521,8 @@ video {
 
 .gallery-modal-content {
   position: relative;
-  max-width: min(90vw, 750px);
-  max-height: min(85vh, 680px);
+  max-width: min(90vw, 800px);
+  max-height: 90vh;
   width: 100%;
   margin: 0 1rem;
   padding: 1.5rem 1.75rem;
@@ -539,7 +532,7 @@ video {
   border: 1px solid rgba(148, 163, 184, 0.45);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  overflow: hidden;
 }
 
 .gallery-modal-title {
@@ -549,12 +542,14 @@ video {
 }
 
 .gallery-modal-media {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  margin: 0.5rem auto 0;
   border-radius: 16px;
-  max-height: 480px;
-  margin-top: 0.35rem;
+  object-fit: contain;
 }
 
-/* Modal close button */
 .btn {
   border-radius: 999px;
   border: 1px solid transparent;
