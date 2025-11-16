@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery – Christmas Gift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">Quiz Unlocker</h1>
+      <nav class="site-nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./gallery.html" class="nav-link nav-link-active">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="view">
+      <div class="card">
+        <h2>Your Gallery</h2>
+        <p class="lead">
+          Correct answers unlock new photos and videos. The harder the difficulty, the more you unlock.
+        </p>
+        <div id="gallery-empty" class="gallery-empty hidden">
+          Play the game to reveal your first reward.
+        </div>
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="gallery-modal" class="gallery-modal hidden">
+    <div class="gallery-modal-backdrop"></div>
+    <div class="gallery-modal-content">
+      <button id="gallery-modal-close" class="btn btn-text small modal-close">✕</button>
+      <div id="gallery-modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initGalleryPage } from "./pages/gallery.js";
+    initGalleryPage();
+  </script>
+</body>
+</html>
