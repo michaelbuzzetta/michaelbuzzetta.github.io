@@ -74,7 +74,7 @@ function renderQuestion() {
   feedbackEl.classList.remove("correct");
   feedbackEl.classList.remove("incorrect");
 
-  questionTextEl.textContent = question.q; // uses "q"
+  questionTextEl.textContent = question.q;
   clearElement(optionsListEl);
 
   const correctIndex = question.answer;
