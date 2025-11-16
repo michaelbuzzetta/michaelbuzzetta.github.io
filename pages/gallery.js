@@ -15,7 +15,9 @@ export function initGalleryPage() {
 
   function openModalForItem(item) {
     clear(modalBody);
+
     const title = document.createElement("h3");
+    title.className = "gallery-modal-title";
     title.textContent = item.title;
     modalBody.appendChild(title);
 
@@ -23,24 +25,38 @@ export function initGalleryPage() {
       const video = document.createElement("video");
       video.src = item.src;
       video.controls = true;
+      video.className = "gallery-modal-media";
       modalBody.appendChild(video);
     } else {
       const img = document.createElement("img");
       img.src = item.src;
       img.alt = item.title;
+      img.className = "gallery-modal-media";
       modalBody.appendChild(img);
     }
 
     modal.classList.remove("hidden");
+    document.body.classList.add("no-scroll");
   }
 
   function closeModal() {
     modal.classList.add("hidden");
+    document.body.classList.remove("no-scroll");
+    clear(modalBody);
   }
 
   modalClose.addEventListener("click", closeModal);
-  modal.addEventListener("click", event => {
-    if (event.target === modal || event.target.classList.contains("gallery-modal-backdrop")) {
+  modal.addEventListener("click", (event) => {
+    if (
+      event.target === modal ||
+      event.target.classList.contains("gallery-modal-backdrop")
+    ) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !modal.classList.contains("hidden")) {
       closeModal();
     }
   });
@@ -56,13 +72,15 @@ export function initGalleryPage() {
 
     empty.classList.add("hidden");
 
-    items.forEach(item => {
-      const card = document.createElement("div");
+    items.forEach((item) => {
+      const card = document.createElement("button");
+      card.type = "button";
       card.className = "gallery-item";
 
       const thumb = document.createElement(item.type === "video" ? "video" : "img");
       thumb.className = "gallery-thumb";
       thumb.src = item.src;
+
       if (item.type === "video") {
         thumb.muted = true;
         thumb.loop = true;

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Gallery – Christmas Gift</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
@@ -19,14 +20,18 @@
 
   <main class="site-main">
     <section class="view">
-      <div class="card">
-        <h2>Your Gallery</h2>
-        <p class="lead">
-          Correct answers unlock new photos and videos. The harder the difficulty, the more you unlock.
-        </p>
+      <div class="card gallery-card">
+        <header class="card-header">
+          <h2>Your Gallery</h2>
+          <p class="lead">
+            Correct answers unlock new photos and videos. The harder the difficulty, the more you unlock.
+          </p>
+        </header>
+
         <div id="gallery-empty" class="gallery-empty hidden">
           Play the game to reveal your first reward.
         </div>
+
         <div id="gallery-grid" class="gallery-grid"></div>
       </div>
     </section>
@@ -35,7 +40,9 @@
   <div id="gallery-modal" class="gallery-modal hidden">
     <div class="gallery-modal-backdrop"></div>
     <div class="gallery-modal-content">
-      <button id="gallery-modal-close" class="btn btn-text small modal-close">✕</button>
+      <button id="gallery-modal-close" class="btn btn-text small modal-close" aria-label="Close gallery item">
+        ✕
+      </button>
       <div id="gallery-modal-body"></div>
     </div>
   </div>

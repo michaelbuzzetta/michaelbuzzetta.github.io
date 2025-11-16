@@ -11,6 +11,8 @@ body {
   color: #f4f5ff;
 }
 
+
+
 .site-header {
   border-bottom: 1px solid #232a45;
   background: #101630;
@@ -348,4 +350,234 @@ body {
   width: 100%;
   border-radius: 10px;
   margin-top: 0.75rem;
+}
+
+/* Layout */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #182544, #050816 55%);
+  color: #f9fafb;
+}
+
+/* Simple reset */
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header / nav */
+.site-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to right, rgba(3, 7, 18, 0.9), rgba(15, 23, 42, 0.85));
+}
+
+.site-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #e5e7eb;
+  border: 1px solid transparent;
+  transition: background 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.nav-link:hover {
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.nav-link-active {
+  border-color: rgba(251, 191, 36, 0.8);
+  background: rgba(251, 191, 36, 0.08);
+  color: #facc15;
+}
+
+/* Main layout */
+.site-main {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.25rem;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem 1.75rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-header .lead {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-empty {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px dashed rgba(148, 163, 184, 0.5);
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Gallery items */
+.gallery-item {
+  border: none;
+  padding: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border 0.15s ease-out;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.9);
+  border-color: rgba(251, 191, 36, 0.7);
+}
+
+.gallery-thumb {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.gallery-item-title {
+  padding: 0.55rem 0.75rem 0.7rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.6));
+}
+
+/* Modal */
+.no-scroll {
+  overflow: hidden;
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.96), rgba(3, 7, 18, 0.98));
+  backdrop-filter: blur(10px);
+}
+
+.gallery-modal-content {
+  position: relative;
+  max-width: min(90vw, 750px);
+  max-height: min(85vh, 680px);
+  width: 100%;
+  margin: 0 1rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 20px;
+  background: radial-gradient(circle at top left, #020617, #020617 55%, #0f172a);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery-modal-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f9fafb;
+}
+
+.gallery-modal-media {
+  border-radius: 16px;
+  max-height: 480px;
+  margin-top: 0.35rem;
+}
+
+/* Modal close button */
+.btn {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: transparent;
+  color: #e5e7eb;
+  transition: background 0.15s ease-out, border-color 0.15s ease-out, transform 0.1s ease-out;
+}
+
+.btn-text.small {
+  font-size: 0.9rem;
+}
+
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.btn:hover {
+  background: rgba(148, 163, 184, 0.16);
+  border-color: rgba(148, 163, 184, 0.6);
+  transform: translateY(-1px);
 }
