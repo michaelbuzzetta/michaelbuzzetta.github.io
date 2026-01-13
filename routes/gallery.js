@@ -1,17 +1,12 @@
 const STORAGE_KEY = "quizUnlocker_unlockedMediaIds";
 
-// Build media URLs relative to THIS MODULE (routes/ -> ../public/prize/)
-const MEDIA_BASE_URL = new URL("../public/prize/", import.meta.url);
+const MEDIA_BASE = "./public/prize";
 
 const PHOTO_COUNT = 1954;
 const VIDEO_COUNT = 20;
 
 const PHOTO_EXT = ".jpg";
 const VIDEO_EXT = ".mp4";
-
-function mediaUrl(filename) {
-  return new URL(filename, MEDIA_BASE_URL).toString();
-}
 
 function buildMediaList() {
   const media = [];
@@ -20,7 +15,7 @@ function buildMediaList() {
     media.push({
       id: `photo-${i}`,
       type: "image",
-      src: mediaUrl(`photo${i}${PHOTO_EXT}`),
+      src: `${MEDIA_BASE}/photo${i}${PHOTO_EXT}`,
       title: `Photo ${i}`,
     });
   }
@@ -29,7 +24,7 @@ function buildMediaList() {
     media.push({
       id: `video-${i}`,
       type: "video",
-      src: mediaUrl(`video${i}${VIDEO_EXT}`),
+      src: `${MEDIA_BASE}/video${i}${VIDEO_EXT}`,
       title: `Video ${i}`,
     });
   }
@@ -87,9 +82,7 @@ export function unlockMedia(count) {
   const toUnlock = pool.slice(0, count);
 
   toUnlock.forEach((item) => {
-    if (!unlockedIds.includes(item.id)) {
-      unlockedIds.push(item.id);
-    }
+    if (!unlockedIds.includes(item.id)) unlockedIds.push(item.id);
   });
 
   saveUnlockedIds();

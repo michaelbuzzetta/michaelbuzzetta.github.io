@@ -1,40 +1,5 @@
 import { getUnlockedMedia } from "../routes/gallery.js";
 
-// Build media URLs relative to THIS MODULE (pages/ -> ../public/prize/)
-const MEDIA_BASE_URL = new URL("../public/prize/", import.meta.url);
-
-function mediaUrl(filename) {
-  return new URL(filename, MEDIA_BASE_URL).toString();
-}
-
-function applyImageWithFallback(el, item) {
-  const match = item.id.match(/^photo-(\d+)$/);
-  if (!match) {
-    el.src = item.src;
-    return;
-  }
-
-  const index = match[1];
-  const candidates = [
-    mediaUrl(`photo${index}.jpg`),
-    mediaUrl(`photo${index}.jpeg`),
-    mediaUrl(`photo${index}.png`),
-  ];
-
-  let attempt = 0;
-  el.src = candidates[attempt];
-
-  el.onerror = () => {
-    attempt += 1;
-    if (attempt < candidates.length) {
-      el.src = candidates[attempt];
-    } else {
-      el.onerror = null;
-      el.classList.add("gallery-thumb-missing");
-    }
-  };
-}
-
 export function initGalleryPage() {
   const grid = document.getElementById("gallery-grid");
   const empty = document.getElementById("gallery-empty");
@@ -60,15 +25,13 @@ export function initGalleryPage() {
       const video = document.createElement("video");
       video.src = item.src;
       video.controls = true;
-      video.playsInline = true;
-      video.preload = "metadata";
       video.className = "gallery-modal-media";
       modalBody.appendChild(video);
     } else {
       const img = document.createElement("img");
       img.alt = item.title;
       img.className = "gallery-modal-media";
-      applyImageWithFallback(img, item);
+      img.src = item.src;
       modalBody.appendChild(img);
     }
 
@@ -83,6 +46,7 @@ export function initGalleryPage() {
   }
 
   modalClose.addEventListener("click", closeModal);
+
   modal.addEventListener("click", (event) => {
     if (
       event.target === modal ||
@@ -122,11 +86,9 @@ export function initGalleryPage() {
         thumb.muted = true;
         thumb.loop = true;
         thumb.autoplay = true;
-        thumb.playsInline = true;
-        thumb.preload = "metadata";
       } else {
         thumb.alt = item.title;
-        applyImageWithFallback(thumb, item);
+        thumb.src = item.src;
       }
 
       const title = document.createElement("div");
