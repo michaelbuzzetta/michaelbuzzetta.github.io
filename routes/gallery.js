@@ -89,3 +89,10 @@ export function unlockMedia(count) {
   saveUnlockedIds();
   return toUnlock;
 }
+
+export function unlockAllMedia() {
+  const allMedia = buildMediaList();
+  unlockedIds = allMedia.map((m) => m.id);
+  saveUnlockedIds();
+  return unlockedIds.length;
+}
