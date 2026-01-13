@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Christmas Gift - Gallery</title>
+  <title>Gallery – Christmas Gift</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
@@ -12,19 +13,25 @@
       <h1 class="site-title">Christmas Gift</h1>
       <nav class="site-nav">
         <a href="./index.html" class="nav-link">Home</a>
-        <a href="./gallery.html" class="nav-link">Gallery</a>
-        <button id="unlock-full-gallery-btn" class="nav-link nav-button" type="button">
-          Click If You Want to Ruin the Fun
-        </button>
+        <a href="./gallery.html" class="nav-link nav-link-active">Gallery</a>
       </nav>
     </div>
   </header>
 
   <main class="site-main">
     <section class="view">
-      <div class="card">
-        <h2>Gallery</h2>
-        <p id="gallery-empty" class="lead hidden">No media unlocked yet. Play the game to unlock items.</p>
+      <div class="card gallery-card">
+        <header class="card-header">
+          <h2>Your Gallery</h2>
+          <p class="lead">
+            Correct answers unlock new photos and videos. The harder the difficulty, the more you unlock.
+          </p>
+        </header>
+
+        <div id="gallery-empty" class="gallery-empty hidden">
+          Play the game to reveal your first reward.
+        </div>
+
         <div id="gallery-grid" class="gallery-grid"></div>
       </div>
     </section>
@@ -32,119 +39,17 @@
 
   <div id="gallery-modal" class="gallery-modal hidden">
     <div class="gallery-modal-backdrop"></div>
-    <div class="gallery-modal-card">
-      <button id="gallery-modal-close" class="btn btn-text" type="button">✕</button>
+    <div class="gallery-modal-content">
+      <button id="gallery-modal-close" class="btn btn-text small modal-close" aria-label="Close gallery item">
+        ✕
+      </button>
       <div id="gallery-modal-body"></div>
-    </div>
-  </div>
-
-  <div id="unlock-modal" class="modal hidden">
-    <div class="modal-backdrop"></div>
-    <div class="modal-card">
-      <div class="modal-header">
-        <h2>Unlock Full Gallery</h2>
-        <button id="unlock-modal-close" class="btn btn-text" type="button">✕</button>
-      </div>
-
-      <p class="lead">Enter the password to unlock everything.</p>
-
-      <div class="form-row">
-        <label for="unlock-password">Password</label>
-        <input id="unlock-password" type="password" autocomplete="off" />
-      </div>
-
-      <div id="unlock-error" class="form-error hidden"></div>
-
-      <div class="button-row">
-        <button id="unlock-submit" class="btn btn-primary" type="button">Unlock</button>
-        <button id="unlock-cancel" class="btn btn-secondary" type="button">Cancel</button>
-      </div>
     </div>
   </div>
 
   <script type="module">
     import { initGalleryPage } from "./pages/gallery.js";
     initGalleryPage();
-  </script>
-
-  <script type="module">
-    import { unlockAllMedia } from "./routes/gallery.js";
-
-    const FULL_GALLERY_PASSWORD = "Acapulco";
-
-    const openBtn = document.getElementById("unlock-full-gallery-btn");
-    const modal = document.getElementById("unlock-modal");
-    const closeBtn = document.getElementById("unlock-modal-close");
-    const cancelBtn = document.getElementById("unlock-cancel");
-    const submitBtn = document.getElementById("unlock-submit");
-    const input = document.getElementById("unlock-password");
-    const error = document.getElementById("unlock-error");
-
-    if (openBtn && modal && closeBtn && cancelBtn && submitBtn && input && error) {
-      const showError = (msg) => {
-        error.textContent = msg;
-        error.classList.remove("hidden");
-      };
-
-      const clearError = () => {
-        error.textContent = "";
-        error.classList.add("hidden");
-      };
-
-      const openModal = () => {
-        clearError();
-        input.value = "";
-        modal.classList.remove("hidden");
-        document.body.classList.add("no-scroll");
-        setTimeout(() => input.focus(), 0);
-      };
-
-      const closeModal = () => {
-        modal.classList.add("hidden");
-        document.body.classList.remove("no-scroll");
-        clearError();
-        input.value = "";
-      };
-
-      openBtn.addEventListener("click", openModal);
-      closeBtn.addEventListener("click", closeModal);
-      cancelBtn.addEventListener("click", closeModal);
-
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal || e.target.classList.contains("modal-backdrop")) {
-          closeModal();
-        }
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
-        if (e.key === "Enter" && !modal.classList.contains("hidden")) submitBtn.click();
-      });
-
-      submitBtn.addEventListener("click", () => {
-        clearError();
-        const attempt = input.value;
-
-        if (!attempt) {
-          showError("Please enter a password.");
-          return;
-        }
-
-        if (attempt !== FULL_GALLERY_PASSWORD) {
-          showError("Incorrect password. Try again.");
-          return;
-        }
-
-        unlockAllMedia();
-        closeModal();
-
-        if (typeof window.dispatchEvent === "function") {
-          window.dispatchEvent(new StorageEvent("storage", { key: "quizUnlocker_unlockedMediaIds" }));
-        }
-
-        alert("Full gallery unlocked!");
-      });
-    }
   </script>
 </body>
 </html>
