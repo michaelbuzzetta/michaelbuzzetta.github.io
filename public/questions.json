@@ -1,7 +1,12 @@
 [
   {
     "q": "What is the name of the University where we met?",
-    "choices": ["University Dublin College", "University College Dublin", "Trinity College Dublin", "Hogwarts"],
+    "choices": [
+      "University Dublin College",
+      "University College Dublin",
+      "Trinity College Dublin",
+      "Hogwarts"
+    ],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
@@ -29,7 +34,12 @@
   },
   {
     "q": "What is the name of the resturant we went to on our first date?",
-    "choices": ["Acapulco", "Pablo Picante", "Agave Dublin", "El Grito Mexican"],
+    "choices": [
+      "Acapulco",
+      "Pablo Picante",
+      "Agave Dublin",
+      "El Grito Mexican"
+    ],
     "answer": 0,
     "category": "Personal",
     "difficulty": "medium"
@@ -64,7 +74,12 @@
   },
   {
     "q": "Where were we when I first told you I loved you?",
-    "choices": ["On the Lawn infront of Oriley", "In your Dorm", "In my Dorm", "Ontop of a Ferris Wheel"],
+    "choices": [
+      "On the Lawn infront of Oriley",
+      "In your Dorm",
+      "In my Dorm",
+      "Ontop of a Ferris Wheel"
+    ],
     "answer": 0,
     "category": "Personal",
     "difficulty": "medium"
@@ -85,7 +100,12 @@
   },
   {
     "q": "What is the first thing I said to you?",
-    "choices": ["Hi, I am Michael", "I love line dancing and country music", "Have fun cleansing your Skeleton", "Who is you favorite country artist"],
+    "choices": [
+      "Hi, I am Michael",
+      "I love line dancing and country music",
+      "Have fun cleansing your Skeleton",
+      "Who is you favorite country artist"
+    ],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
@@ -99,7 +119,12 @@
   },
   {
     "q": "In Ireland, what is one thing that I said I always wanted to do?",
-    "choices": ["Bungee jump on the Cliffs of Moher", "Get married", "Split the G perfectly", "Fall in love"],
+    "choices": [
+      "Bungee jump on the Cliffs of Moher",
+      "Get married",
+      "Split the G perfectly",
+      "Fall in love"
+    ],
     "answer": 3,
     "category": "Personal",
     "difficulty": "easy"
@@ -134,7 +159,12 @@
   },
   {
     "q": "Between Ireland, Amsterdam, and Alicante, whcih one did you like best?",
-    "choices": ["Ireland", "Amsterdam", "Alicante", "None of them, because I actually hate you"],
+    "choices": [
+      "Ireland",
+      "Amsterdam",
+      "Alicante",
+      "None of them, because I actually hate you"
+    ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
@@ -150,7 +180,1194 @@
     "q": "When did I first say 'I love you'?",
     "choices": ["April 8", "April 14", "March 24", "May 11"],
     "answer": 0,
-    "category":"Personal",
+    "category": "Personal",
     "difficulty": "medium"
+  },
+  {
+    "q": "On what day did we technically first interact, even though we didn’t realize it yet?",
+    "choices": ["February 14", "March 17", "March 24", "April 14"],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What did you hand me the very first time we interacted?",
+    "choices": ["A coffee", "A box of donuts", "A flower", "A note"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What did you do while handing me the donuts?",
+    "choices": [
+      "Spilled them",
+      "Photobombed my picture",
+      "Dropped them",
+      "Made a joke"
+    ],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Why do you mostly remember our early conversations?",
+    "choices": [
+      "You wrote them down",
+      "I reminded you later",
+      "You were heavily concussed",
+      "You have a great memory"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What did I notice about you that made me immediately want to say 'me too'?",
+    "choices": ["Your accent", "Your scars", "Your smile", "Your laugh"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What did I ask instead of saying 'me too'?",
+    "choices": [
+      "How you got them",
+      "If you were okay",
+      "If they hurt",
+      "Nothing at all"
+    ],
+    "answer": 0,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Where was the first place I asked if you were fine?",
+    "choices": [
+      "On the bus",
+      "At Takeaway",
+      "Back at the manor",
+      "In your dorm"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who assumed I fancied you after that?",
+    "choices": ["Luke", "Juliet", "Aaron", "Ross"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What happened to me during the game at the retreat?",
+    "choices": [
+      "I got injured",
+      "I had a panic attack",
+      "I left early",
+      "I got sick"
+    ],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What helped me feel better during that panic attack?",
+    "choices": [
+      "Going outside",
+      "Sitting alone",
+      "You asking if I was okay",
+      "Listening to music"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Where did you sit next to me in the dark that Saturday night?",
+    "choices": ["On the bus", "During worship", "At dinner", "At Takeaway"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What question showed me you immediately understood me?",
+    "choices": [
+      "Favorite color",
+      "Highs and lows from the week",
+      "Future plans",
+      "Music taste"
+    ],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What conversation do I consider the most memorable of my life?",
+    "choices": [
+      "Our first date",
+      "The Sunday bus conversation",
+      "Our first kiss",
+      "Our dorm talk"
+    ],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What kind of topics did we talk about on the bus?",
+    "choices": ["Travel plans", "Classes", "Trauma and mental health", "Music"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who was stuck listening to that bus conversation?",
+    "choices": ["Lauren", "Juliet", "Aaron", "Ross"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What did I realize as soon as we got off the bus?",
+    "choices": [
+      "I was exhausted",
+      "You were cute",
+      "You would be important in my life",
+      "I needed food"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Why was getting your phone number so scary for me?",
+    "choices": [
+      "I lost my phone",
+      "I was shy",
+      "You were the first guy outside school",
+      "I forgot to ask"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Where did I first consciously think you were cute?",
+    "choices": ["On the bus", "At worship", "At Takeaway", "On our first date"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What small action sent sparks through my heart early on?",
+    "choices": [
+      "You holding my hand",
+      "You smiling at me",
+      "You nudging my leg",
+      "You hugging me"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What activity led to our first one-on-one hangout?",
+    "choices": ["Coffee", "Country dancing", "Studying", "Thrifting"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Where did I drag you after knowing you for only about a week?",
+    "choices": ["A concert", "IKEA and thrifting", "A museum", "The beach"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What did I think when you paid for my coffee and lunch?",
+    "choices": [
+      "You liked me",
+      "You were just being nice",
+      "You felt bad",
+      "You lost a bet"
+    ],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What awkward medical fact did I have to tell you very early on?",
+    "choices": [
+      "I was sick",
+      "I had a concussion",
+      "I was on my period",
+      "I needed meds"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "How long were we together during our accidental all-nighter?",
+    "choices": ["3 hours", "5 hours", "8 hours", "12 hours"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What time was our early morning walk?",
+    "choices": ["2 am", "3 am", "5 am", "7 am"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What did you ask to do during that walk?",
+    "choices": ["Sit down", "Go back", "Hold my hand", "Take pictures"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "How often did we see each other in Ireland when we weren’t traveling?",
+    "choices": [
+      "Once a week",
+      "A few times a week",
+      "Nearly every day",
+      "Only weekends"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What happened when a seagull stole my sandwich?",
+    "choices": [
+      "You laughed from afar",
+      "You texted me",
+      "You showed up in under 10 minutes",
+      "You bought me another"
+    ],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What song did I listen to on repeat while thinking about us?",
+    "choices": ["Treat You Better", "Imagination", "Stitches", "Mercy"],
+    "answer": 1,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What flower did you bring me on our first date?",
+    "choices": ["Rose", "Tulip", "Daffodil", "Sunflower"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What movie did we watch back at my dorm after our first date?",
+    "choices": ["Tangled", "Frozen", "Descendants", "Moana"],
+    "answer": 2,
+    "category": "Personal",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What planet is known as the Red Planet?",
+    "choices": ["Mars", "Venus", "Jupiter", "Mercury"],
+    "answer": 0,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What gas do plants absorb during photosynthesis?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the chemical symbol for gold?",
+    "choices": ["Ag", "Au", "Gd", "Go"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "How many bones are in the adult human body?",
+    "choices": ["196", "206", "212", "226"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What part of the cell contains DNA?",
+    "choices": ["Ribosome", "Mitochondria", "Nucleus", "Cytoplasm"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What force keeps planets in orbit around the sun?",
+    "choices": ["Magnetism", "Friction", "Gravity", "Inertia"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which blood type is considered the universal donor?",
+    "choices": ["A", "B", "AB", "O-"],
+    "answer": 3,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the hardest natural substance on Earth?",
+    "choices": ["Steel", "Quartz", "Diamond", "Granite"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What organ is primarily responsible for detoxification?",
+    "choices": ["Kidney", "Liver", "Lung", "Pancreas"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the speed of light closest to?",
+    "choices": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "1 million km/s",
+      "30,000 km/s"
+    ],
+    "answer": 0,
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What vitamin is produced when skin is exposed to sunlight?",
+    "choices": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": 3,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What type of animal is a dolphin?",
+    "choices": ["Fish", "Amphibian", "Mammal", "Reptile"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is H2O more commonly known as?",
+    "choices": ["Salt", "Hydrogen Peroxide", "Water", "Oxygen"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which planet has the most moons?",
+    "choices": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": 3,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What does DNA stand for?",
+    "choices": [
+      "Deoxyribonucleic Acid",
+      "Dynamic Nuclear Acid",
+      "Double Nitrogen Atom",
+      "Deoxygenated Acid"
+    ],
+    "answer": 0,
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which organ pumps blood through the body?",
+    "choices": ["Lungs", "Brain", "Heart", "Liver"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What state of matter has a fixed shape and volume?",
+    "choices": ["Solid", "Liquid", "Gas", "Plasma"],
+    "answer": 0,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What gas do humans need to breathe?",
+    "choices": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the center of an atom called?",
+    "choices": ["Electron", "Proton", "Neutron", "Nucleus"],
+    "answer": 3,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What planet is closest to the sun?",
+    "choices": ["Venus", "Earth", "Mercury", "Mars"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What part of the brain controls balance?",
+    "choices": ["Cerebrum", "Cerebellum", "Brainstem", "Hypothalamus"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What unit is used to measure electrical current?",
+    "choices": ["Volt", "Watt", "Ampere", "Ohm"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the main gas in Earth’s atmosphere?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which scientist proposed the theory of relativity?",
+    "choices": ["Newton", "Einstein", "Galileo", "Tesla"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What organ helps humans breathe?",
+    "choices": ["Heart", "Lungs", "Kidneys", "Stomach"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What type of energy comes from the sun?",
+    "choices": ["Chemical", "Nuclear", "Solar", "Thermal"],
+    "answer": 2,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What element has the atomic number 1?",
+    "choices": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What does pH measure?",
+    "choices": ["Temperature", "Acidity", "Density", "Pressure"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "choices": ["Liver", "Pancreas", "Kidney", "Stomach"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the study of living organisms called?",
+    "choices": ["Geology", "Biology", "Chemistry", "Physics"],
+    "answer": 1,
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was the first President of the United States?",
+    "choices": [
+      "Thomas Jefferson",
+      "George Washington",
+      "John Adams",
+      "Abraham Lincoln"
+    ],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "In which year did World War II end?",
+    "choices": ["1943", "1944", "1945", "1946"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which civilization built the pyramids?",
+    "choices": ["Romans", "Greeks", "Egyptians", "Mayans"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who discovered America in 1492?",
+    "choices": [
+      "Marco Polo",
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "Magellan"
+    ],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What wall fell in 1989?",
+    "choices": ["Great Wall", "Berlin Wall", "Iron Wall", "Roman Wall"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which empire was ruled by Julius Caesar?",
+    "choices": ["Greek", "Roman", "Ottoman", "Persian"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What war was fought between the North and South in the U.S.?",
+    "choices": ["Revolutionary War", "Civil War", "WWI", "Vietnam War"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was the first man to walk on the moon?",
+    "choices": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What ship sank in 1912 after hitting an iceberg?",
+    "choices": ["Lusitania", "Britannic", "Titanic", "Olympic"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was known as the Maid of Orléans?",
+    "choices": [
+      "Marie Curie",
+      "Joan of Arc",
+      "Catherine the Great",
+      "Queen Elizabeth I"
+    ],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which ancient city was buried by Mount Vesuvius?",
+    "choices": ["Rome", "Athens", "Pompeii", "Sparta"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who wrote the Declaration of Independence?",
+    "choices": [
+      "George Washington",
+      "Benjamin Franklin",
+      "Thomas Jefferson",
+      "John Hancock"
+    ],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which war was triggered by the assassination of Archduke Franz Ferdinand?",
+    "choices": ["WWI", "WWII", "Crimean War", "Cold War"],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What empire built the Colosseum?",
+    "choices": ["Greek", "Roman", "Byzantine", "Ottoman"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was the first female Prime Minister of the UK?",
+    "choices": [
+      "Theresa May",
+      "Margaret Thatcher",
+      "Queen Victoria",
+      "Angela Merkel"
+    ],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which ancient civilization used cuneiform writing?",
+    "choices": ["Egyptian", "Roman", "Sumerian", "Greek"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What year did the American Revolution begin?",
+    "choices": ["1775", "1776", "1781", "1789"],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who led the Mongol Empire?",
+    "choices": ["Attila", "Genghis Khan", "Kublai Khan", "Tamerlane"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which war ended with the Treaty of Versailles?",
+    "choices": ["WWI", "WWII", "Napoleonic Wars", "Cold War"],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What civilization built Machu Picchu?",
+    "choices": ["Aztec", "Inca", "Maya", "Olmec"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was the first emperor of Rome?",
+    "choices": ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What was the primary language of the Roman Empire?",
+    "choices": ["Greek", "Latin", "Hebrew", "Italian"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which country was NOT part of the Axis powers?",
+    "choices": ["Germany", "Italy", "Japan", "France"],
+    "answer": 3,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who was known as the Sun King?",
+    "choices": ["Louis XIV", "Napoleon", "Henry VIII", "Louis XVI"],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What event started the French Revolution?",
+    "choices": [
+      "Storming of the Bastille",
+      "Execution of the king",
+      "Declaration of Rights",
+      "Reign of Terror"
+    ],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who painted the ceiling of the Sistine Chapel?",
+    "choices": ["Da Vinci", "Raphael", "Michelangelo", "Donatello"],
+    "answer": 2,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What war was fought between Athens and Sparta?",
+    "choices": ["Peloponnesian War", "Trojan War", "Persian War", "Punic War"],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which empire was centered in modern-day Turkey?",
+    "choices": ["Roman", "Ottoman", "British", "Spanish"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who was the first woman to fly solo across the Atlantic?",
+    "choices": [
+      "Amelia Earhart",
+      "Bessie Coleman",
+      "Sally Ride",
+      "Valentina Tereshkova"
+    ],
+    "answer": 0,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What period followed the Middle Ages?",
+    "choices": ["Ancient", "Renaissance", "Industrial", "Modern"],
+    "answer": 1,
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who painted the Mona Lisa?",
+    "choices": ["Van Gogh", "Picasso", "Da Vinci", "Michelangelo"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What art movement is Salvador Dalí associated with?",
+    "choices": ["Cubism", "Surrealism", "Impressionism", "Realism"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which artist cut off part of his ear?",
+    "choices": ["Picasso", "Van Gogh", "Monet", "Rembrandt"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What medium is the Sistine Chapel ceiling painted in?",
+    "choices": ["Oil", "Watercolor", "Fresco", "Acrylic"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which art movement focused on light and color?",
+    "choices": ["Baroque", "Impressionism", "Cubism", "Gothic"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Who painted Starry Night?",
+    "choices": ["Van Gogh", "Monet", "Matisse", "Klimt"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is sculpture primarily made from?",
+    "choices": ["Paint", "Sound", "Material", "Light"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which artist is known for Cubism?",
+    "choices": ["Picasso", "Da Vinci", "Goya", "Turner"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is a mural?",
+    "choices": ["Small painting", "Wall painting", "Sketch", "Photograph"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which museum houses the Mona Lisa?",
+    "choices": ["Met", "Louvre", "Uffizi", "Prado"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What art period came before the Renaissance?",
+    "choices": ["Baroque", "Gothic", "Modern", "Romantic"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Who painted The Persistence of Memory?",
+    "choices": ["Dalí", "Picasso", "Kahlo", "Miro"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What material is stained glass made from?",
+    "choices": ["Plastic", "Metal", "Colored glass", "Crystal"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What style is Jackson Pollock known for?",
+    "choices": ["Drip painting", "Cubism", "Surrealism", "Realism"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the art of folding paper called?",
+    "choices": ["Calligraphy", "Origami", "Kirigami", "Papier-mâché"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which artist painted Guernica?",
+    "choices": ["Picasso", "Goya", "Dalí", "Velázquez"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What does abstract art focus on?",
+    "choices": ["Realism", "Emotion and form", "History", "Religion"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is a canvas typically made of?",
+    "choices": ["Metal", "Plastic", "Fabric", "Glass"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which artist is known for water lilies?",
+    "choices": ["Monet", "Van Gogh", "Degas", "Cézanne"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What art movement rejected traditional perspective?",
+    "choices": ["Cubism", "Baroque", "Renaissance", "Realism"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is graffiti considered?",
+    "choices": ["Vandalism only", "Street art", "Calligraphy", "Folk art"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which artist painted The Last Supper?",
+    "choices": ["Michelangelo", "Raphael", "Da Vinci", "Titian"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What art form uses light and motion?",
+    "choices": ["Painting", "Sculpture", "Kinetic art", "Fresco"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is a portrait?",
+    "choices": [
+      "Landscape",
+      "Self-expression",
+      "Image of a person",
+      "Abstract shape"
+    ],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is a still life?",
+    "choices": ["Moving scene", "Historical event", "Objects", "Portrait"],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which period emphasized emotion and nature?",
+    "choices": ["Romanticism", "Classicism", "Cubism", "Modernism"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What material is marble sculpture carved from?",
+    "choices": ["Wood", "Stone", "Metal", "Clay"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What does chiaroscuro emphasize?",
+    "choices": ["Texture", "Light and shadow", "Color", "Movement"],
+    "answer": 1,
+    "category": "Art",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is printmaking?",
+    "choices": [
+      "Digital art",
+      "Copying images",
+      "Transferring ink",
+      "Photography"
+    ],
+    "answer": 2,
+    "category": "Art",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which artist is associated with pop art?",
+    "choices": ["Warhol", "Monet", "Van Gogh", "Turner"],
+    "answer": 0,
+    "category": "Art",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the largest continent?",
+    "choices": ["Africa", "Asia", "Europe", "North America"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the longest river in the world?",
+    "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What country has the largest population?",
+    "choices": ["India", "USA", "China", "Russia"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the capital of France?",
+    "choices": ["Rome", "Berlin", "Paris", "Madrid"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which ocean is the largest?",
+    "choices": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which country is shaped like a boot?",
+    "choices": ["Spain", "Italy", "Greece", "Portugal"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What desert is the largest hot desert?",
+    "choices": ["Gobi", "Kalahari", "Sahara", "Atacama"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which continent has the most countries?",
+    "choices": ["Africa", "Europe", "Asia", "South America"],
+    "answer": 0,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What mountain range separates Europe and Asia?",
+    "choices": ["Alps", "Himalayas", "Ural Mountains", "Andes"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the smallest country in the world?",
+    "choices": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the capital of Japan?",
+    "choices": ["Kyoto", "Osaka", "Tokyo", "Hiroshima"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which river runs through Egypt?",
+    "choices": ["Tigris", "Euphrates", "Nile", "Jordan"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which U.S. state is the largest by area?",
+    "choices": ["California", "Texas", "Alaska", "Montana"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which continent is Antarctica?",
+    "choices": ["Northern", "Southern", "Eastern", "Western"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What sea is the saltiest?",
+    "choices": ["Red Sea", "Dead Sea", "Black Sea", "Caspian Sea"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which country has the most islands?",
+    "choices": ["Norway", "Indonesia", "Philippines", "Sweden"],
+    "answer": 3,
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is the capital of Australia?",
+    "choices": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which continent is the driest?",
+    "choices": ["Africa", "Asia", "Antarctica", "Australia"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What is the tallest mountain in the world?",
+    "choices": ["K2", "Kilimanjaro", "Everest", "Denali"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which river runs through Paris?",
+    "choices": ["Thames", "Rhine", "Seine", "Danube"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which country borders the most countries?",
+    "choices": ["Russia", "China", "Brazil", "Germany"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is the largest island in the world?",
+    "choices": ["Australia", "Greenland", "New Guinea", "Madagascar"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which ocean is the coldest?",
+    "choices": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "answer": 3,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the capital of Canada?",
+    "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which country is home to the Andes Mountains?",
+    "choices": ["Brazil", "Chile", "Mexico", "USA"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "What continent is the Amazon Rainforest in?",
+    "choices": ["Africa", "Asia", "South America", "North America"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which city is known as the Big Apple?",
+    "choices": ["Chicago", "Los Angeles", "New York City", "Boston"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is the equator?",
+    "choices": ["Longitude line", "Latitude line", "Time zone", "Border"],
+    "answer": 1,
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "q": "Which country has the longest coastline?",
+    "choices": ["Canada", "Russia", "Australia", "USA"],
+    "answer": 0,
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is the capital of Italy?",
+    "choices": ["Venice", "Florence", "Rome", "Milan"],
+    "answer": 2,
+    "category": "Geography",
+    "difficulty": "easy"
   }
 ]
