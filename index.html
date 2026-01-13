@@ -13,9 +13,6 @@
       <nav class="site-nav">
         <a href="./index.html" class="nav-link">Home</a>
         <a href="./gallery.html" class="nav-link">Gallery</a>
-        <button id="unlock-full-gallery-btn" class="nav-link nav-button" type="button">
-          Click If You Want to Ruin the Fun
-        </button>
       </nav>
     </div>
   </header>
@@ -61,6 +58,7 @@
             <option value="History">History</option>
             <option value="Art">Art</option>
             <option value="Gerography">Geography</option>
+
           </select>
         </div>
 
@@ -97,30 +95,6 @@
     </section>
   </main>
 
-  <div id="unlock-modal" class="modal hidden">
-    <div class="modal-backdrop"></div>
-    <div class="modal-card">
-      <div class="modal-header">
-        <h2>Unlock Full Gallery</h2>
-        <button id="unlock-modal-close" class="btn btn-text" type="button">✕</button>
-      </div>
-
-      <p class="lead">Enter the password to unlock everything.</p>
-
-      <div class="form-row">
-        <label for="unlock-password">Password</label>
-        <input id="unlock-password" type="password" autocomplete="off" />
-      </div>
-
-      <div id="unlock-error" class="form-error hidden"></div>
-
-      <div class="button-row">
-        <button id="unlock-submit" class="btn btn-primary" type="button">Unlock</button>
-        <button id="unlock-cancel" class="btn btn-secondary" type="button">Cancel</button>
-      </div>
-    </div>
-  </div>
-
   <script type="module">
     import { initHome } from "./pages/home.js";
     import { initSettings } from "./pages/settings.js";
@@ -130,80 +104,6 @@
     initSettings();
     initGamePage();
   </script>
-
-  <script type="module">
-    import { unlockAllMedia } from "./routes/gallery.js";
-
-    const FULL_GALLERY_PASSWORD = "CHANGE_ME";
-
-    const openBtn = document.getElementById("unlock-full-gallery-btn");
-    const modal = document.getElementById("unlock-modal");
-    const closeBtn = document.getElementById("unlock-modal-close");
-    const cancelBtn = document.getElementById("unlock-cancel");
-    const submitBtn = document.getElementById("unlock-submit");
-    const input = document.getElementById("unlock-password");
-    const error = document.getElementById("unlock-error");
-
-    if (openBtn && modal && closeBtn && cancelBtn && submitBtn && input && error) {
-      const showError = (msg) => {
-        error.textContent = msg;
-        error.classList.remove("hidden");
-      };
-
-      const clearError = () => {
-        error.textContent = "";
-        error.classList.add("hidden");
-      };
-
-      const openModal = () => {
-        clearError();
-        input.value = "";
-        modal.classList.remove("hidden");
-        document.body.classList.add("no-scroll");
-        setTimeout(() => input.focus(), 0);
-      };
-
-      const closeModal = () => {
-        modal.classList.add("hidden");
-        document.body.classList.remove("no-scroll");
-        clearError();
-        input.value = "";
-      };
-
-      openBtn.addEventListener("click", openModal);
-      closeBtn.addEventListener("click", closeModal);
-      cancelBtn.addEventListener("click", closeModal);
-
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal || e.target.classList.contains("modal-backdrop")) {
-          closeModal();
-        }
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
-        if (e.key === "Enter" && !modal.classList.contains("hidden")) submitBtn.click();
-      });
-
-      submitBtn.addEventListener("click", () => {
-        clearError();
-        const attempt = input.value;
-
-        if (!attempt) {
-          showError("Please enter a password.");
-          return;
-        }
-
-        if (attempt !== FULL_GALLERY_PASSWORD) {
-          showError("Incorrect password. Try again.");
-          return;
-        }
-
-        unlockAllMedia();
-        closeModal();
-        alert("Full gallery unlocked!");
-      });
-    }
-  </script>
 </body>
 </html>
+

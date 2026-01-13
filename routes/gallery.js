@@ -16,7 +16,7 @@ function buildMediaList() {
       id: `photo-${i}`,
       type: "image",
       src: `${MEDIA_BASE}/photo${i}${PHOTO_EXT}`,
-      title: `Photo ${i}`,
+      title: `Photo ${i}`
     });
   }
 
@@ -25,7 +25,7 @@ function buildMediaList() {
       id: `video-${i}`,
       type: "video",
       src: `${MEDIA_BASE}/video${i}${VIDEO_EXT}`,
-      title: `Video ${i}`,
+      title: `Video ${i}`
     });
   }
 
@@ -50,7 +50,6 @@ function saveUnlockedIds() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(unlockedIds));
   } catch {
-    // ignore
   }
 }
 
@@ -82,16 +81,11 @@ export function unlockMedia(count) {
   const toUnlock = pool.slice(0, count);
 
   toUnlock.forEach((item) => {
-    if (!unlockedIds.includes(item.id)) unlockedIds.push(item.id);
+    if (!unlockedIds.includes(item.id)) {
+      unlockedIds.push(item.id);
+    }
   });
 
   saveUnlockedIds();
   return toUnlock;
-}
-
-export function unlockAllMedia() {
-  const allMedia = buildMediaList();
-  unlockedIds = allMedia.map((m) => m.id);
-  saveUnlockedIds();
-  return unlockedIds.length;
 }

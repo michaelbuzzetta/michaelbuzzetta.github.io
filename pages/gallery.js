@@ -1,5 +1,35 @@
 import { getUnlockedMedia } from "../routes/gallery.js";
 
+const MEDIA_BASE = "./public/prize";
+
+function applyImageWithFallback(el, item) {
+  const match = item.id.match(/^photo-(\d+)$/);
+  if (!match) {
+    el.src = item.src;
+    return;
+  }
+
+  const index = match[1];
+  const candidates = [
+    `${MEDIA_BASE}/photo${index}.jpg`,
+    `${MEDIA_BASE}/photo${index}.jpeg`,
+    `${MEDIA_BASE}/photo${index}.png`
+  ];
+
+  let attempt = 0;
+  el.src = candidates[attempt];
+
+  el.onerror = () => {
+    attempt += 1;
+    if (attempt < candidates.length) {
+      el.src = candidates[attempt];
+    } else {
+      el.onerror = null;
+      el.classList.add("gallery-thumb-missing");
+    }
+  };
+}
+
 export function initGalleryPage() {
   const grid = document.getElementById("gallery-grid");
   const empty = document.getElementById("gallery-empty");
@@ -31,7 +61,7 @@ export function initGalleryPage() {
       const img = document.createElement("img");
       img.alt = item.title;
       img.className = "gallery-modal-media";
-      img.src = item.src;
+      applyImageWithFallback(img, item);
       modalBody.appendChild(img);
     }
 
@@ -46,7 +76,6 @@ export function initGalleryPage() {
   }
 
   modalClose.addEventListener("click", closeModal);
-
   modal.addEventListener("click", (event) => {
     if (
       event.target === modal ||
@@ -88,7 +117,7 @@ export function initGalleryPage() {
         thumb.autoplay = true;
       } else {
         thumb.alt = item.title;
-        thumb.src = item.src;
+        applyImageWithFallback(thumb, item);
       }
 
       const title = document.createElement("div");
@@ -112,3 +141,4 @@ export function initGalleryPage() {
     }
   });
 }
+
