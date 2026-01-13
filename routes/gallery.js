@@ -1,12 +1,17 @@
 const STORAGE_KEY = "quizUnlocker_unlockedMediaIds";
 
-const MEDIA_BASE = "./public/prize";
+// Build media URLs relative to THIS MODULE (routes/ -> ../public/prize/)
+const MEDIA_BASE_URL = new URL("../public/prize/", import.meta.url);
 
 const PHOTO_COUNT = 1954;
 const VIDEO_COUNT = 20;
 
 const PHOTO_EXT = ".jpg";
 const VIDEO_EXT = ".mp4";
+
+function mediaUrl(filename) {
+  return new URL(filename, MEDIA_BASE_URL).toString();
+}
 
 function buildMediaList() {
   const media = [];
@@ -15,8 +20,8 @@ function buildMediaList() {
     media.push({
       id: `photo-${i}`,
       type: "image",
-      src: `${MEDIA_BASE}/photo${i}${PHOTO_EXT}`,
-      title: `Photo ${i}`
+      src: mediaUrl(`photo${i}${PHOTO_EXT}`),
+      title: `Photo ${i}`,
     });
   }
 
@@ -24,8 +29,8 @@ function buildMediaList() {
     media.push({
       id: `video-${i}`,
       type: "video",
-      src: `${MEDIA_BASE}/video${i}${VIDEO_EXT}`,
-      title: `Video ${i}`
+      src: mediaUrl(`video${i}${VIDEO_EXT}`),
+      title: `Video ${i}`,
     });
   }
 
@@ -50,6 +55,7 @@ function saveUnlockedIds() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(unlockedIds));
   } catch {
+    // ignore
   }
 }
 

@@ -1,6 +1,11 @@
 import { getUnlockedMedia } from "../routes/gallery.js";
 
-const MEDIA_BASE = "./public/prize";
+// Build media URLs relative to THIS MODULE (pages/ -> ../public/prize/)
+const MEDIA_BASE_URL = new URL("../public/prize/", import.meta.url);
+
+function mediaUrl(filename) {
+  return new URL(filename, MEDIA_BASE_URL).toString();
+}
 
 function applyImageWithFallback(el, item) {
   const match = item.id.match(/^photo-(\d+)$/);
@@ -11,9 +16,9 @@ function applyImageWithFallback(el, item) {
 
   const index = match[1];
   const candidates = [
-    `${MEDIA_BASE}/photo${index}.jpg`,
-    `${MEDIA_BASE}/photo${index}.jpeg`,
-    `${MEDIA_BASE}/photo${index}.png`
+    mediaUrl(`photo${index}.jpg`),
+    mediaUrl(`photo${index}.jpeg`),
+    mediaUrl(`photo${index}.png`),
   ];
 
   let attempt = 0;
@@ -55,6 +60,8 @@ export function initGalleryPage() {
       const video = document.createElement("video");
       video.src = item.src;
       video.controls = true;
+      video.playsInline = true;
+      video.preload = "metadata";
       video.className = "gallery-modal-media";
       modalBody.appendChild(video);
     } else {
@@ -115,6 +122,8 @@ export function initGalleryPage() {
         thumb.muted = true;
         thumb.loop = true;
         thumb.autoplay = true;
+        thumb.playsInline = true;
+        thumb.preload = "metadata";
       } else {
         thumb.alt = item.title;
         applyImageWithFallback(thumb, item);
