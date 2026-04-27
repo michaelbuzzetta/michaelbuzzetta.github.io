@@ -1,164 +1,139 @@
 [
   {
-    "q": "What is the name of the University where we met?",
-    "choices": [
-      "University Dublin College",
-      "University College Dublin",
-      "Trinity College Dublin",
-      "Hogwarts"
-    ],
+    "q": "What is the name of the University where Michael and Kadence met?",
+    "choices": ["University Dublin College", "University College Dublin", "Trinity College Dublin", "Hogwarts"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "Which of these is my favorite animal?",
+    "q": "Which of these is Michael’s favorite animal?",
     "choices": ["Monkey", "Panda", "Spider", "Giraffe"],
     "answer": 0,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "Who was the first person I met at the CU?",
+    "q": "Who was the first person Michael met at the CU?",
     "choices": ["Anya", "The Other Anya", "Luke", "Aaron"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What is my favorite color?",
+    "q": "What is Michael’s favorite color?",
     "choices": ["Blue", "Green", "Yellow", "Purple"],
     "answer": 0,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What is the name of the resturant we went to on our first date?",
-    "choices": [
-      "Acapulco",
-      "Pablo Picante",
-      "Agave Dublin",
-      "El Grito Mexican"
-    ],
+    "q": "What is the name of the restaurant Michael and Kadence went to on their first date?",
+    "choices": ["Acapulco", "Pablo Picante", "Agave Dublin", "El Grito Mexican"],
     "answer": 0,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "Which of these did I claim to know how to do?",
+    "q": "Which of these did Michael claim to know how to do?",
     "choices": ["Backflip", "Salsa", "Line Dance", "Fly"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "How Many Days Did We Go Not Seeing Eachother In Ireland?",
+    "q": "How many days did Michael and Kadence go without seeing each other in Ireland?",
     "choices": ["10", "15", "17", "2"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "Who was the first person to ask me if we were dating?",
+    "q": "Who was the first person to ask Michael if Michael and Kadence were dating?",
     "choices": ["Lauren", "Magdeline", "Aaron", "Ross"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "Who said 'I love you' First?",
+    "q": "Who said \"I love you\" first between Michael and Kadence?",
     "choices": ["Kadence", "Michael", "Juliet", "Kevin"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "Where were we when I first told you I loved you?",
-    "choices": [
-      "On the Lawn infront of Oriley",
-      "In your Dorm",
-      "In my Dorm",
-      "Ontop of a Ferris Wheel"
-    ],
+    "q": "Where were Michael and Kadence when Michael first said \"I love you\" to Kadence?",
+    "choices": ["On the Lawn infront of Oriley", "In your Dorm", "In my Dorm", "Ontop of a Ferris Wheel"],
     "answer": 0,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "How many rides did we go on after dinner on our First Date?",
+    "q": "How many rides did Michael and Kadence go on after dinner on their first date?",
     "choices": ["10", "2", "3", "5"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "How many concussions did I suffer in Ireland?",
+    "q": "How many concussions did Michael suffer in Ireland?",
     "choices": ["1", "2", "3", "I lost count"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What is the first thing I said to you?",
-    "choices": [
-      "Hi, I am Michael",
-      "I love line dancing and country music",
-      "Have fun cleansing your Skeleton",
-      "Who is you favorite country artist"
-    ],
+    "q": "What is the first thing Michael said to Kadence?",
+    "choices": ["Hi, I am Michael", "I love line dancing and country music", "Have fun cleansing your Skeleton", "Who is you favorite country artist"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "How many countries, not counting Ireland, did we travel to together?",
+    "q": "How many countries, not counting Ireland, did Michael and Kadence travel to together?",
     "choices": ["0", "1", "2", "3"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "In Ireland, what is one thing that I said I always wanted to do?",
-    "choices": [
-      "Bungee jump on the Cliffs of Moher",
-      "Get married",
-      "Split the G perfectly",
-      "Fall in love"
-    ],
+    "q": "In Ireland, what is one thing that Michael said Michael always wanted to do?",
+    "choices": ["Bungee jump on the Cliffs of Moher", "Get married", "Split the G perfectly", "Fall in love"],
     "answer": 3,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What was the first line dance you taught me?",
+    "q": "What was the first line dance Michael taught Kadence?",
     "choices": ["Wolf", "Flex", "Project", "Shake it for me"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "Which instrument have be both tried to learn?",
+    "q": "Which instrument have Michael and Kadence both tried to learn?",
     "choices": ["Guitar", "Violin", "Piano", "Flute"],
     "answer": 0,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "How many continents have we kissed on?",
+    "q": "How many continents have Michael and Kadence kissed on?",
     "choices": ["0", "1", "2", "4"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What did you order on our first date?",
+    "q": "What did Kadence order on their first date?",
     "choices": ["Tacos", "Skillet Fajitas", "Chimichanga", "A salad"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "Between Ireland, Amsterdam, and Alicante, whcih one did you like best?",
+    "q": "Between Ireland, Amsterdam, and Alicante, whcih one did Michael like best?",
     "choices": [
       "Ireland",
       "Amsterdam",
@@ -177,7 +152,7 @@
     "difficulty": "medium"
   },
   {
-    "q": "When did I first say 'I love you'?",
+    "q": "When did Michael first say 'I love you'?",
     "choices": ["April 8", "April 14", "March 24", "May 11"],
     "answer": 0,
     "category": "Personal",
@@ -191,14 +166,14 @@
     "difficulty": "medium"
   },
   {
-    "q": "What did you hand me the very first time we interacted?",
+    "q": "What did Michael hand Kadence the very first time we interacted?",
     "choices": ["A coffee", "A box of donuts", "A flower", "A note"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What did you do while handing me the donuts?",
+    "q": "What did Michael do while handing Kadence the donuts?",
     "choices": [
       "Spilled them",
       "Photobombed my picture",
@@ -210,7 +185,7 @@
     "difficulty": "medium"
   },
   {
-    "q": "Why do you mostly remember our early conversations?",
+    "q": "Why does Kadence mostly remember our early conversations?",
     "choices": [
       "You wrote them down",
       "I reminded you later",
@@ -222,14 +197,14 @@
     "difficulty": "easy"
   },
   {
-    "q": "What did I notice about you that made me immediately want to say 'me too'?",
+    "q": "What did Kadence notice about Michael that made me immediately want to say 'me too'?",
     "choices": ["Your accent", "Your scars", "Your smile", "Your laugh"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "What did I ask instead of saying 'me too'?",
+    "q": "What did Michael ask instead of saying 'me too'?",
     "choices": [
       "How you got them",
       "If you were okay",
@@ -241,7 +216,7 @@
     "difficulty": "hard"
   },
   {
-    "q": "Where was the first place I asked if you were fine?",
+    "q": "Where was the first place Michael asked if Kadence was fine?",
     "choices": [
       "On the bus",
       "At Takeaway",
@@ -253,14 +228,14 @@
     "difficulty": "medium"
   },
   {
-    "q": "Who assumed I fancied you after that?",
+    "q": "Who assumed Michael fancied Kadence after that?",
     "choices": ["Luke", "Juliet", "Aaron", "Ross"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What happened to me during the game at the retreat?",
+    "q": "What happened to Michael during the game at the retreat?",
     "choices": [
       "I got injured",
       "I had a panic attack",
@@ -272,11 +247,11 @@
     "difficulty": "medium"
   },
   {
-    "q": "What helped me feel better during that panic attack?",
+    "q": "What helped Kadence feel better during that panic attack?",
     "choices": [
       "Going outside",
       "Sitting alone",
-      "You asking if I was okay",
+      "Michael asking if I was okay",
       "Listening to music"
     ],
     "answer": 2,
@@ -284,14 +259,14 @@
     "difficulty": "hard"
   },
   {
-    "q": "Where did you sit next to me in the dark that Saturday night?",
+    "q": "Where did Michael sit next to Kadence in the dark that Saturday night?",
     "choices": ["On the bus", "During worship", "At dinner", "At Takeaway"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What question showed me you immediately understood me?",
+    "q": "What question showed Kadence that Michael immediately understood Kadence?",
     "choices": [
       "Favorite color",
       "Highs and lows from the week",
@@ -303,7 +278,7 @@
     "difficulty": "hard"
   },
   {
-    "q": "What conversation do I consider the most memorable of my life?",
+    "q": "What conversation does Kadence consider the most memorable of her life?",
     "choices": [
       "Our first date",
       "The Sunday bus conversation",
@@ -315,123 +290,123 @@
     "difficulty": "easy"
   },
   {
-    "q": "What kind of topics did we talk about on the bus?",
+    "q": "What kind of topics did Michael and Kadence talk about on the bus?",
     "choices": ["Travel plans", "Classes", "Trauma and mental health", "Music"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "Who was stuck listening to that bus conversation?",
+    "q": "Who was stuck listening to that bus conversation between Michael and Kadence?",
     "choices": ["Lauren", "Juliet", "Aaron", "Ross"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What did I realize as soon as we got off the bus?",
+    "q": "What did Michael realize as soon as Michael and Kadence got off the bus?",
     "choices": [
-      "I was exhausted",
-      "You were cute",
-      "You would be important in my life",
-      "I needed food"
+      "Michael was exhausted",
+      "Kadence was cute",
+      "Kadence would be important in Michael's life",
+      "Michael needed food"
     ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "Why was getting your phone number so scary for me?",
+    "q": "Why was getting Kadence’s phone number so scary for Michael?",
     "choices": [
-      "I lost my phone",
-      "I was shy",
-      "You were the first guy outside school",
-      "I forgot to ask"
+      "Michael lost his phone",
+      "Michael was shy",
+      "Kadence was the first girl outside school for Michael",
+      "Michael forgot to ask"
     ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "Where did I first consciously think you were cute?",
-    "choices": ["On the bus", "At worship", "At Takeaway", "On our first date"],
+    "q": "Where did Michael first consciously think Kadence was cute?",
+    "choices": ["On the bus", "At worship", "At Takeaway", "On their first date"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What small action sent sparks through my heart early on?",
+    "q": "What small action from Kadence sent sparks through Michael’s heart early on?",
     "choices": [
-      "You holding my hand",
-      "You smiling at me",
-      "You nudging my leg",
-      "You hugging me"
+      "Kadence holding Michael’s hand",
+      "Kadence smiling at Michael",
+      "Kadence nudging Michael’s leg",
+      "Kadence hugging Michael"
     ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "What activity led to our first one-on-one hangout?",
+    "q": "What activity led to Michael and Kadence’s first one-on-one hangout?",
     "choices": ["Coffee", "Country dancing", "Studying", "Thrifting"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "Where did I drag you after knowing you for only about a week?",
+    "q": "Where did Kadence drag Michael after knowing him for only about a week?",
     "choices": ["A concert", "IKEA and thrifting", "A museum", "The beach"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What did I think when you paid for my coffee and lunch?",
+    "q": "What did Kadence think when Michael paid for Kadence’s coffee and lunch?",
     "choices": [
-      "You liked me",
-      "You were just being nice",
-      "You felt bad",
-      "You lost a bet"
+      "Michael liked Kadence",
+      "Michael was just being nice",
+      "Michael felt bad",
+      "Michael lost a bet"
     ],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What awkward medical fact did I have to tell you very early on?",
+    "q": "What awkward medical fact did Kadence have to tell Michael very early on?",
     "choices": [
-      "I was sick",
-      "I had a concussion",
-      "I was on my period",
-      "I needed meds"
+      "Kadence was sick",
+      "Kadence had a concussion",
+      "Kadence was on her period",
+      "Kadence needed meds"
     ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "How long were we together during our accidental all-nighter?",
+    "q": "How long were Michael and Kadence together during their accidental all-nighter?",
     "choices": ["3 hours", "5 hours", "8 hours", "12 hours"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What time was our early morning walk?",
+    "q": "What time was Michael and Kadence’s early morning walk?",
     "choices": ["2 am", "3 am", "5 am", "7 am"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What did you ask to do during that walk?",
-    "choices": ["Sit down", "Go back", "Hold my hand", "Take pictures"],
+    "q": "What did Michael ask to do during that walk?",
+    "choices": ["Sit down", "Go back", "Hold Kadence’s hand", "Take pictures"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "How often did we see each other in Ireland when we weren’t traveling?",
+    "q": "How often did Michael and Kadence see each other in Ireland when they weren’t traveling?",
     "choices": [
       "Once a week",
       "A few times a week",
@@ -443,33 +418,33 @@
     "difficulty": "easy"
   },
   {
-    "q": "What happened when a seagull stole my sandwich?",
+    "q": "What happened when a seagull stole Kadence’s sandwich?",
     "choices": [
-      "You laughed from afar",
-      "You texted me",
-      "You showed up in under 10 minutes",
-      "You bought me another"
+      "Michael laughed from afar",
+      "Michael texted Kadence",
+      "Michael showed up in under 10 minutes",
+      "Michael bought Kadence another"
     ],
     "answer": 2,
     "category": "Personal",
     "difficulty": "hard"
   },
   {
-    "q": "What song did I listen to on repeat while thinking about us?",
+    "q": "What song did Kadence listen to on repeat while thinking about Michael and Kadence?",
     "choices": ["Treat You Better", "Imagination", "Stitches", "Mercy"],
     "answer": 1,
     "category": "Personal",
     "difficulty": "medium"
   },
   {
-    "q": "What flower did you bring me on our first date?",
+    "q": "What flower did Michael bring Kadence on their first date?",
     "choices": ["Rose", "Tulip", "Daffodil", "Sunflower"],
     "answer": 2,
     "category": "Personal",
     "difficulty": "easy"
   },
   {
-    "q": "What movie did we watch back at my dorm after our first date?",
+    "q": "What movie did Michael and Kadence watch back at Kadence’s dorm after their first date?",
     "choices": ["Tangled", "Frozen", "Descendants", "Moana"],
     "answer": 2,
     "category": "Personal",
