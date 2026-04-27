@@ -335,12 +335,12 @@
     "difficulty": "medium"
   },
   {
-    "q": "What small action from Kadence sent sparks through Michael’s heart early on?",
+    "q": "What small action from Michael sent sparks through Kadence's heart early on?",
     "choices": [
-      "Kadence holding Michael’s hand",
-      "Kadence smiling at Michael",
-      "Kadence nudging Michael’s leg",
-      "Kadence hugging Michael"
+      "Michael holding Kadence's hand",
+      "Michael smiling at Kadence",
+      "Michael nudging Kadence's leg",
+      "Michael hugging Kadence"
     ],
     "answer": 2,
     "category": "Personal",
